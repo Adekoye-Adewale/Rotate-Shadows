@@ -43,7 +43,7 @@
     font-family: quicksand;
     font-size: 18px;
     cursor: default;
-    transition: all 500ms cubic-bezier(0, 0.98, 0, 0.3) 200ms;
+    transition: all 500ms ease 0ms;
 }
 
 button {
@@ -53,11 +53,10 @@ button {
     border: none;
     border-radius: 3px;
     padding: 6px 20px;
-    box-shadow: red 0px 0px 5px 1px;
 }
 
 .sec::before {
-    content: none;
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -66,12 +65,12 @@ button {
     border-radius: 3px;
     background: #000000;
     box-shadow: 0px 1px 1px 2px #000000;
-    -webkit-transform: rotate(03deg);
-    -moz-transform: rotate(03deg);
-    -o-transform: rotate(03deg);
-    -ms-transform: rotate(03deg);
-    transform: rotate(03deg);
-    transition: all 900ms cubic-bezier(0, 0.78, 0, 0.8) 200ms;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: all 400ms ease 0ms;
     z-index: -2;
 }
 
@@ -95,8 +94,18 @@ button {
 
 .sec:hover::after {
     content: "";
+     -webkit-transform: rotate(03deg);
+    -moz-transform: rotate(03deg);
+    -o-transform: rotate(03deg);
+    -ms-transform: rotate(03deg);
+    background: #000000;
 }
 
 .sec:hover:before {
     content: "";
+    -webkit-transform: rotate(03deg);
+    -moz-transform: rotate(03deg);
+    -o-transform: rotate(03deg);
+    -ms-transform: rotate(03deg);
+    background: #000000;
 }
